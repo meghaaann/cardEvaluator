@@ -12,7 +12,7 @@ public class Pack {
 		int x = 0;
 		for (int a = 0; a <= 3; a++) {
 			for (int b = 0; b <= 12; b++) {
-				cards[x] = new Card(a,b);
+				cards[x] = new Card(a, b);
 				x++;
 			}
 		}
@@ -35,17 +35,5 @@ public class Pack {
 	public int getTotalCards() {
 		return i;
 	}
-	
-	public static void main(String args[]){
-		Pack d = new Pack();
-//		Card drawn = d.drawFromPack();
-//		System.out.println("Card Drawn:"+ drawn);
-		for(int i=0;i<52;i++){
-			System.out.println("CARDS REMAINING : "+d.getTotalCards());
-			Card temp = d.drawFromPack();
-			System.out.println("Card Drawn:"+ temp);
-			System.out.println("------------------------------");
-		}
-			
-	}
+
 }
