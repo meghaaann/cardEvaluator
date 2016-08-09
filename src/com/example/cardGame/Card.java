@@ -1,5 +1,6 @@
 package com.example.cardGame;
 
+
 public class Card {
 	private int type, value;
 	private String[] cardType = { "Clubs", "Spades", "Diamonds", "Hearts" };
@@ -9,6 +10,7 @@ public class Card {
 		type = types;
 		value = values;
 		// this.value = value;
+
 	}
 
 	public String toString() {
